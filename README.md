@@ -30,3 +30,7 @@ Output: <br>
 `Total Distance: 8.0 units` <br>
 
 Penjelasan: Rute optimal dalam kasus ini adalah persegi, mengunjungi setiap kota sekali dan kembali ke kota awal, dengan total jarak `8 units`.
+
+## Time Complexity dan Space Complexity
+
+Algoritma solusi yang diimplementasikan memiliki kompleksitas waktu O(n) dan kompleksitas ruang O(n), di mana n adalah jumlah kota yang diberikan sebagai input.
