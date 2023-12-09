@@ -13,8 +13,10 @@ function findOptimalRoute(coords) {
     for (let i = 0; i < n; i++) {
         optimalRoute.push(i + 1);
         if (i < n - 1) {
+            // Menghitung jarak antara setiap kota berurutan dalam rute
             totalDistance += calculateDistance(coords[i][0], coords[i][1], coords[i + 1][0], coords[i + 1][1]);
         } else {
+            // Menghitung jarak kembali ke kota awal
             totalDistance += calculateDistance(coords[i][0], coords[i][1], coords[0][0], coords[0][1]);
         }
     }
