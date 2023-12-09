@@ -31,4 +31,4 @@ Total Distance: 8.0 units`
 
 ### Penjelasan
 
-Rute optimal dalam kasus ini membentuk persegi dengan mengunjungi setiap kota tepat sekali dan kembali ke kota awal. Rute optimal adalah `City 1 -> City 2 -> City 3 -> City 4 -> City 1`. Total jarak yang ditempuh dalam rute ini adalah 8.0 units.
+Rute optimal dalam kasus ini membentuk persegi dengan mengunjungi setiap kota tepat sekali dan kembali ke kota awal. Rute optimal adalah `City 1 -> City 2 -> City 3 -> City 4 -> City 1`. Total jarak yang ditempuh dalam rute ini adalah 8.0 `units`.
