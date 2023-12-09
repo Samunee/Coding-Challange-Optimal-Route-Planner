@@ -1,34 +1,32 @@
 # Optimal Route Planner
 
-Program ini adalah sebuah solusi sederhana yang ditulis menggunakan JavaScript untuk mencari rute optimal yang mengunjungi semua kota tepat sekali dan kembali ke kota awal dengan meminimalkan total jarak yang ditempuh.
+Ini adalah sebuah program sederhana yang dibuat dengan JavaScript untuk menemukan rute optimal yang mengunjungi semua kota tepat sekali dan kembali ke kota awal, dengan meminimalkan total jarak yang ditempuh.
 
 ## Overview
 
-Program ini menggunakan fungsi `findOptimalRoute(coords)` yang mengambil daftar koordinat kota sebagai argumen dan mencari rute optimal yang melibatkan setiap kota tepat sekali dan kembali ke kota awal.
+Program ini menggunakan fungsi `findOptimalRoute(coords)` yang mengambil daftar koordinat kota sebagai argumen dan mencari rute optimal yang mengunjungi semua kota sekali dan kembali ke kota awal.
 
 ### Cara Kerja
 
-- Fungsi `findOptimalRoute(coords)` akan menemukan rute terpendek yang mengunjungi setiap kota sekali dan kembali ke kota awal.
-- Program menggunakan pendekatan langsung untuk menemukan rute yang optimal, dengan menghitung jarak antara setiap kota berurutan dalam rute dan menghitung jarak kembali ke kota awal.
+- Fungsi `findOptimalRoute(coords)` menemukan rute terpendek dengan menghitung jarak antara setiap kota berurutan dalam rute.
+- Jarak dari setiap kota ke kota berikutnya dan kembali ke kota awal dihitung menggunakan fungsi `calculateDistance(x1, y1, x2, y2)`.
 
 ## Penggunaan
 
-- Program ini memanfaatkan array koordinat kota sebagai input.
-- Setelah koordinat kota ditetapkan, program akan mencetak hasil berupa rute optimal dan total jarak yang ditempuh.
+- Program ini menggunakan koordinat kota yang disimpan dalam bentuk array.
+- Setelah program dijalankan, akan menampilkan hasil rute optimal dan total jarak yang ditempuh.
 
 ## Contoh Input-Output
 
 Input: <br>
 `4` <br>
-`0 0` <br>
-`0 2` <br>
-`2 2` <br>
-`2 0` <br>
+`0` `0` <br>
+`0` `2` <br>
+`2` `2` <br>
+`2` `0` <br>
 
 Output: <br>
-`Optimal Route: City 1 -> City 2 -> City 3 -> City 4 -> City 1
-Total Distance: 8.0 units`
+`Output: Optimal Route: City 1 -> City 2 -> City 3 -> City 4 -> City 1` <br>
+`Total Distance: 8.0 units` <br>
 
-### Penjelasan
-
-Rute optimal dalam kasus ini membentuk persegi dengan mengunjungi setiap kota tepat sekali dan kembali ke kota awal. Rute optimal adalah `City 1 -> City 2 -> City 3 -> City 4 -> City 1`. Total jarak yang ditempuh dalam rute ini adalah 8.0 `units`.
+Penjelasan: Rute optimal dalam kasus ini adalah persegi, mengunjungi setiap kota sekali dan kembali ke kota awal, dengan total jarak `8 units`.
